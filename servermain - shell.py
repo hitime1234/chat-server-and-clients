@@ -172,9 +172,14 @@ def userloginsignup(ss,user,pss):
             return False    
         
 
+from requests import get
+ip = get('https://api.ipify.org').text
+print('My public IP address is: {}'.format(ip))
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-hostip = "192.168.0.55"
+hostname = socket. gethostname()
+local_ip = socket. gethostbyname(hostname)
+hostip = local_ip 
 hostport = 25565
 server.bind((hostip,hostport))
 print("server ready!")
