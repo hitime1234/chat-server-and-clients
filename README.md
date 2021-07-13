@@ -3,6 +3,7 @@ this is a multithreaded chat server that can handle multiple clients with a func
 
 default login files are:
 .login is used.
+
 username:
 other
 password:
